@@ -1,0 +1,475 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+ 
+body{
+    background-image: url("../media/images/1061553.jpg");
+}
+
+/* ------- header ------- */
+
+header{
+    width: 100%;
+}
+ 
+nav{
+    display: flex;
+    padding: 1% 4%;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+nav img{
+    width: 60px;
+    padding: 1%;
+    border-radius: 50%;
+    filter: brightness(50%);
+}
+
+.navbar{
+    flex: 1;
+    text-align: right;
+}  
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 12px 12px;
+    position: relative;
+
+}  
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+.navbar ul li::after{
+    content: "";
+    background-color: #FF005C;;
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+.navbar ul li:hover::after{
+    width: 100%;
+    cursor: pointer;
+} 
+
+#menu-icon{
+    display: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+#menu-icon2{
+    display: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/* ------- end header ------- */
+
+
+/* ------- main ------- */
+
+.anime{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 74px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.wia{
+    width: 100%;
+    margin: auto;
+}
+
+.anime h1{
+    font-size: 34px;
+    padding-bottom: 1%;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.wiap{
+    background-color: rgba(236, 224, 220, 0.61);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.anip{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 200;
+    color: #000000;
+    margin: auto;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#tadc{
+    font-size: 34px;
+    font-weight: 600;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.anirows{
+    display: flex;
+    justify-content: space-between;
+}
+
+.anicol{
+    flex-basis: 31%;
+    background-color: rgba(236, 224, 220, 0.815);
+    border-radius: 7%;
+    margin-bottom: 5%;
+    padding: 15px 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.anicol:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,1);
+}
+
+.anicolimg{
+    flex-basis: 31%;
+    background-color: rgba(236, 224, 220, 0.815);
+    border-radius: 7%;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 15px 12px;
+    margin-bottom: 5%;
+}
+
+.anicolimg:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,1);
+}
+
+.typesimg{
+    width: 80%;
+    height: auto;
+}
+
+h2{
+    font-weight: 500;
+    text-align: center;
+    margin: 10px 0px;
+    color: #a0003b;
+}
+
+/* ------- end main ------- */
+
+
+/* ------- footer ------- */
+
+footer{
+    margin-top: 10%;
+    display: flex;
+    background-color: rgba(236, 224, 220, 0.815);
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+}
+
+.copyright{
+    width: 14%;
+    margin: auto;
+}
+
+.pname{
+    text-align: center;
+    font-size: 19px;
+    color: #FF005C;
+}
+
+.mname{
+    text-align: center;
+    font-size: 19px;
+    margin-top: 5px;
+}
+
+.MEME{
+    width: 30%;
+    margin: auto;
+}
+
+.MEME img{
+    width: 100%;
+    height: auto;
+}
+
+.rules{
+    width: 35%;
+    margin: auto;
+}
+
+.rultit{
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 35px;
+    color: #FF005C;
+}
+
+.ruldesc{
+    font-size: 20px;
+}
+
+/* ------- end footer ------- */
+
+
+@media(max-width: 1220px){
+    .anicolimg{
+        width: 35%;
+        background-color: rgba(236, 224, 220, 0.815);
+        border-radius: 7%;
+        cursor: pointer;
+        transition: 0.5s;
+        padding: 15px 12px;
+        margin-bottom: 5%;
+    }
+
+    .typesimg{
+        margin: 25% auto;
+        width:98%;
+        height: auto;
+    }
+}
+
+@media(max-width: 1070px){
+    .anime{
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        padding-top: 74px;
+        justify-content: space-between;
+        box-sizing: border-box;
+        grid-template-columns: repeat(3, 1fr);
+    
+    }
+    
+    .anirows{
+        justify-content: space-between;
+        flex-direction: column
+    }
+    
+    .anicol{
+        background-color: rgba(236, 224, 220, 0.815);
+        border-radius: 10px;
+        box-sizing: border-box;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    
+    .anicol:hover{
+        box-shadow: 0 0 20px 0px rgba(0,0,0,1);
+    }
+
+    .anicol p{
+        font-size: 16px;
+    }
+    
+    #typesAnime{
+        display: none;
+    }
+}
+
+@media(max-width: 760px){
+    .navbar ul li{
+        display: block;
+    }
+    .navbar{
+        background-color: #419CE2;
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        top: 0px;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    #menu-icon{
+        display: block;
+        margin: 10px;
+    }
+    #menu-icon2{
+        display: block;
+        margin: 10px;
+    }
+
+    .navbar ul{
+        padding: 34px;
+    }
+
+    .anime{
+        width: 95%;
+        text-align: center;
+        margin: auto;
+        padding-top: 74px;
+        justify-content: space-between;
+        box-sizing: border-box;
+        grid-template-columns: repeat(3, 1fr);
+    
+    }
+    
+    .wia{
+        width: 100%;
+        margin: auto;
+    }
+    
+    .anime h1{
+        font-size: 30px;
+        padding-bottom: 1%;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    
+    .wiap{
+        background-color: rgba(236, 224, 220, 0.61);
+        border-radius: 5px;
+        padding: 10px;
+    }
+    
+    .anip{
+        width: 100%;
+        font-size: 16px;
+        font-weight: 200;
+        color: #000000;
+        margin: auto;
+        text-align: justify;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    #tadc{
+        font-size: 28px;
+        font-weight: 600;
+        margin-top: 8%;
+        margin-bottom: 4%;
+    }
+    
+    .anirows{
+        justify-content: space-between;
+        flex-direction: column
+    }
+    
+    .anicol{
+        flex-basis: 31%;
+        background-color: rgba(236, 224, 220, 0.815);
+        border-radius: 7%;
+        margin-bottom: 5%;
+        padding: 15px 12px;
+        box-sizing: border-box;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    
+    .anicol:hover{
+        box-shadow: 0 0 20px 0px rgba(0,0,0,1);
+    }
+    
+    h2{
+        font-weight: 500;
+        text-align: center;
+        margin: 10px 0px;
+        font-size: 20px;
+        color: #a0003b;
+    }
+    
+    #typesAnime{
+        display: none;
+    }
+
+
+
+    .copyright{
+        width: 40%;
+        margin: auto;
+    }
+
+    .pname{
+        text-align: center;
+        font-size: 14px;
+        color: #FF005C;
+    }
+    
+    .mname{
+        text-align: center;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    
+    .MEME{
+        display: none;
+    } 
+
+    .rules{
+        width: 55%;
+        margin: auto;
+    }
+
+    .rultit{
+        margin-bottom: 10px;
+        text-align: left;
+        font-size: 19px;
+        color: #FF005C;
+    }
+    
+    .ruldesc{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 470px){
+
+
+    .copyright{
+        width: 40%;
+        margin: auto;
+    }
+
+    .pname{
+        text-align: center;
+        font-size: 10px;
+        color: #FF005C;
+    }
+    
+    .mname{
+        text-align: center;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    
+    .MEME{
+        display: none;
+    } 
+
+    .rules{
+        width: 55%;
+        margin: auto;
+    }
+
+    .rultit{
+        margin-bottom: 10px;
+        text-align: left;
+        font-size: 15px;
+        color: #FF005C;
+    }
+    
+    .ruldesc{
+        font-size: 10px;
+    }
+}
